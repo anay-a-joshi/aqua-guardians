@@ -1,0 +1,188 @@
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px); /* Optional: Blur effect for background */
+    background-image: url('Turtle-Header-Image.jpg'); /* Update with correct path */
+    background-size: cover; /* Ensures the image covers the navbar */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    color: ghostwhite; /* Text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  body {
+    padding-top: 80px; /* Matches the height of the navbar */
+  }
+  
+  .navbar-bg {
+    background-color: #f5f5f5 !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .logo.dark h2 {
+    color: #333;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-menu li {
+    list-style: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .nav-menu li:hover {
+    color: #ff13f0; /* Example highlight color */
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    color: #000;
+    z-index: 9;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease;
+  }
+  
+  .mobile-menu.active {
+    top: 80px;
+  }
+  
+  .mobile-menu li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .mobile-menu li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .mobile-menu-bottom {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+  
+  .social-icons .icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .social-icons .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  @media screen and (max-width: 940px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .nav-icons {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+      color: #fff;
+    }
+  
+    .mobile-menu button {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      margin: 1rem 0;
+      background-color: #f37b42;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .mobile-menu button:hover {
+      background-color: #e65a2d;
+    }
+  }
+  
+  /* Image Popup */
+  .image-popup {
+    position: fixed; /* Fixed to the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 1000; /* Ensure it's above all other elements */
+  }
+  
+  .turtle-image {
+    max-width: 90%; /* Leave some space around the image */
+    max-height: 90%; /* Leave some space vertically */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add depth with shadow */
+    animation: fadeInOut 3s ease-in-out; /* Smooth fade-in and fade-out */
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

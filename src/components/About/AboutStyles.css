@@ -1,0 +1,97 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #013a63; /* Ocean-inspired background */
+    color: #fff;
+    padding: 3rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d9f3f0; /* Softer white text for readability */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section {
+    background-color: #e9ecef; /* Light container for contrast */
+    color: #005f73; /* Text color for readability */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #005f73;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #333;
+}
+
+.about-section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.get-involved-button {
+    margin-top: 1rem;
+    padding: 10px 16px;
+    background-color: #0a9396; /* Teal button */
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-involved-button:hover {
+    background-color: #94d2bd; /* Brighter teal on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+}

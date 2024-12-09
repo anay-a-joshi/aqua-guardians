@@ -1,0 +1,201 @@
+.donate {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #005f73; /* Ocean-inspired background */
+    color: #fff;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.donate-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.donate-header p {
+    font-size: 1.2rem;
+    color: #d9f3f0; /* Softer white for supporting text */
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.donation-form {
+    background-color: #e9ecef; /* Light container for contrast */
+    color: #005f73; /* Dark text for readability */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+.donation-form h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #005f73;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border: 1px solid #0a9396; /* Slightly brighter border on focus */
+}
+
+.donate-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0a9396;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #94d2bd; /* Brighter teal on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .donate-header h1 {
+        font-size: 2rem;
+    }
+
+    .donate-header p {
+        font-size: 1rem;
+    }
+
+    .donation-form {
+        padding: 1.5rem;
+    }
+
+    .donation-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+        color: #00ffcc; /* Neon color */
+        padding: 2rem 3rem;
+        border-radius: 15px;
+        box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+        font-size: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        z-index: 1000;
+        animation: fadeIn 0.3s ease;
+      }
+      
+    .popup p {
+        margin: 0;
+        line-height: 1.5;
+    }
+        
+        @keyframes fadeIn {
+            from {
+            opacity: 0;
+            }
+            to {
+            opacity: 1;
+            }
+        }
+        
+    .credit-card-fields,
+    .paypal-fields,
+    .bank-fields {
+        margin-top: 1rem;
+    }
+
+    .credit-card-fields .form-group,
+    .paypal-fields .form-group,
+    .bank-fields .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .donate-button {
+        background-color: #0077b6;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+
+    .donate-button:hover {
+        background-color: #005f73;
+    }
+
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #00ffcc;
+        padding: 2rem 3rem;
+        border-radius: 15px;
+        box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+        font-size: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        z-index: 1000;
+    }
+
+}

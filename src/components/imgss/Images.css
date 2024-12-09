@@ -1,0 +1,86 @@
+/* Header styles */
+.blog {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.blog h1 {
+    font-size: 36px;
+    color: #005f73; /* Deep marine blue */
+    margin-bottom: 10px;
+}
+
+.blog h2 {
+    font-size: 20px;
+    color: #0a9396; /* Complementary marine teal */
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Container styles */
+.container {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container {
+    max-width: 400px;
+    text-align: center;
+    background-color: #e9ecef; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+.image-container h1 {
+    font-size: 22px;
+    color: #005f73;
+    margin-bottom: 10px;
+}
+
+.image-container h2 {
+    font-size: 18px;
+    color: #0a9396;
+    margin-bottom: 10px;
+}
+
+.image-container p {
+    font-size: 16px;
+    color: #343a40; /* Neutral dark for readability */
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .blog h1 {
+        font-size: 28px;
+    }
+
+    .blog h2 {
+        font-size: 18px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        max-width: 90%;
+    }
+}
